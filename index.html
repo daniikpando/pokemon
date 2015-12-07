@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='font/Pokemon_Hollow.ttf' rel='stylesheet' type='text/css'>
+	<title>Pokemon</title>
+	<style>
+	body{
+		text-align: center;
+	}
+	@font-face{
+		font-family: "pokemon";
+		src: url(font/Pokemon_Hollow.ttf) format("truetype");
+	}
+	@font-face{
+		font-family: "pika";
+		src: url(font/Pokemon.ttf) format("truetype");
+	}
+	h1{
+		font-family: "pokemon",serif;
+	}
+	p{
+		font-family: "pokemon",serif;
+		font-size: 20px;
+	}
+	canvas{
+		border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+	<h1>Pelea Pokemón</h1>
+	<canvas id="canvas" height="350" width="400"></canvas>
+	<p id="turno"></p>
+	<p id="pika"></p>
+	<p id="sci"></p>
+	<script src="js/script.js"></script>
+	<script src="js/juego.js"></script>
+	<script>
+	window.onload = function(){
+		var canvas = document.getElementById('canvas');
+		juego = new Juego(canvas);
+	}
+	</script>
+<body>
+</html>
